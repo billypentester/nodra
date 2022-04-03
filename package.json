@@ -4,6 +4,7 @@
   "description": "A complete backend CLI tool for nodeJS-based applications",
   "main": "index.js",
   "bin": "./bin/nodra.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,6 +29,7 @@
     "axios": "^0.26.1",
     "chalk": "^4.1.2",
     "commander": "^9.1.0",
+    "inquirer": "^8.2.2",
     "shelljs": "^0.8.5"
   }
 }
