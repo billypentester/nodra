@@ -6,7 +6,7 @@ import { links } from './links.js';
 import * as fs from 'fs';
 
 program
-    .version('1.0.0')
+    .version('2.0.0')
     .command("create")
     .parse(process.argv);
 
