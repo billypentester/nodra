@@ -1,0 +1,34 @@
+{
+  "name": "nodra",
+  "version": "0.0.4",
+  "description": "CLI tool for creating complete backend of nodeJS-based applications in a single command",
+  "main": "index.js",
+  "bin": "./bin/nodra.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billypentester/nodra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/billypentester/nodra/issues"
+  },
+  "homepage": "https://github.com/billypentester/nodra",
+  "keywords": [
+    "nodejs",
+    "cli",
+    "backend",
+    "development",
+    "tool",
+    "nodra"
+  ],
+  "author": "Bilal Ahmad",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^4.1.2",
+    "commander": "^9.1.0",
+    "shelljs": "^0.8.5"
+  }
+}
