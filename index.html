@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nodra NPM Package</title>
+    <style>
+        tr,td,table{
+            text-align: center;
+        }
+        i{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+        <nav class="navbar navbar-light bg-dark">
+            <span class="navbar-brand p-3 text-white display-5">Nodra NPM Package</span>
+        </nav>
+       
+        <div class="container">
+            <div class="my-5">
+                <span class="display-4 text-center d-block">Hello, Developer!</span>
+                <h5 class="p-4 text-center">
+                    Nodra is a public npm package that will help you to create and configure
+                    a custom backend node based CRUD application in minutes
+                </h5>
+            </div>
+            <div class="my-5">
+                <span class="display-6 text-center d-block">Features</span>
+                <h5 class="p-4 text-center">
+                    Nodra provide you wide range features to setup a custom backend for your web application
+                </h5>
+                <div class="row justify-content-center">
+                    <div class="col-5 m-2 bg-light text-success px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <i class="fa-solid fa-database"></i>
+                        <h4>DB connectivity</h4>
+                    </div>
+                     <div class="col-5 m-2 bg-light text-warning px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <h4>Schema Validation</h4>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="col-5 m-2 bg-light text-primary px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <i class="fa-solid fa-server"></i>
+                        <h4>Ready to use API</h4>
+                    </div>
+                    <div class="col-5 m-2 bg-light text-info px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <h4>Template engine</h4>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="col-5 m-2 bg-light text-danger px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <i class="fa-solid fa-user-check"></i>
+                        <h4>Authentication & Authorization </h4>
+                    </div>
+                    <div class="col-5 m-2 bg-light text-secondary px-5 py-4 rounded-3 d-flex justify-content-between align-items-center"> 
+                        <h4>Static website</h4>
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div clas="my-5">
+                 <span class="display-6 text-center d-block">Folder Structure</span>
+                 <div class="d-flex justify-content-around my-5 align-items-center">
+                    <div class="bg-dark p-4 text-white rounded-3">
+                        <pre>
+server
+├── node_modules
+├── api
+│   └── user.js
+├── db
+│   └── conn.js
+├── middlewares
+│   └── auth.js
+├── models
+│   └── schema.js
+├── public
+│   ├── css
+│   ├── js
+│   └── images
+├── routes
+│   └── route.js
+├── temp
+│   ├── partials
+│   └── views  
+├── .env
+└── package.json
+                    </pre>
+                    </div> 
+                    <div>
+                        <dl>
+                            <dt>node_modules</dt>
+                            <dd>Directory contains all dependencies</dd>
+                            <dt>api</dt>
+                            <dd>Folder contain all user actions like registeration, updation, deletion etc.</dd>
+                            <dt>db</dt>
+                            <dd>Contains the database connection file</dd>
+                            <dt>middlewares</dt>
+                            <dd>Contain all program that will excute before going to specific path like auth etc.</dd>
+                            <dt>models</dt>
+                            <dd>Contains all database schemas to validate the input data.</dd>
+                            <dt>public</dt>
+                            <dd>Contains all static files like css, js, images files.</dd>
+                            <dt>routes</dt>
+                            <dd>Contains all main, user, admin routes.</dd>
+                            <dt>temp</dt>
+                            <dd>Contains all partials and views of template engine like hbs, ejs, pug etc.</dd>
+                            <dt>.env</dt>
+                            <dd>Contains all environment variables</dd>
+                            <dt>package.json</dt>
+                            <dd>Contains all package information</dd>
+                        </dl>
+                    </div>
+                 </div>
+            </div>
+            <div class="my-5">    
+                <span class="display-6 text-center d-block">Site Map</span>
+                <table class="table my-5 table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">Action</th>
+                    <th scope="col">Path</th>
+                    <th scope="col">Request</th>
+                    <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Static files</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/public">http://localhost:3000/public</a></td>
+                        <td>GET</td>
+                        <td>this endpoint contains static files like css, js, images etc.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Create</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/user/register">http://localhost:3000/user/register</a></td>
+                        <td>POST</td>
+                        <td>This endpoint get user data, validate schema and create a user in database.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Update</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/user/update/id	">http://localhost:3000/user/update/id</a></td>
+                        <td>POST</td>
+                        <td>This endpoint get user data along user ID and update the user data in database.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Delete</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/user/delete">http://localhost:3000/user/delete</a></td>
+                        <td>POST</td>
+                        <td>This endpoint get get user data along user ID, verify password and delete the user.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Login</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/user/login">http://localhost:3000/user/login</a></td>
+                        <td>POST</td>
+                        <td>This endpoint get user credentials, verify it, check authorization and redirect to user panel.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Logout</th>
+                        <td><a class="text-dark" target="_blank" href="http://localhost:3000/user/logout">http://localhost:3000/user/logout	</a></td>
+                        <td>GET</td>
+                        <td>This endpoint is just logout the user If that user is logged in.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="my-5">
+                <span class="display-6 text-center d-block">How do I setup my app?</span>
+                <div class="my-5">
+                    <dl>
+                        <dt>
+                            Configure Enviromental variable
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Open .env file, modify secret values or remain it default.</li>
+                                <li>DB contain mongodb endpoint, PORT number used for node app, SECRET is for Auth token generation, STATIC concat value with app endpoint.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Move Static files
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Navigate to Public folder, move files in css, js, images folders.</li>
+                                <li>modify your paths in html files and got to endpoint : <a href="http://localhost:3000/public/">http://localhost:3000/public/</a> </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Move Dynamic files
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Navigate to temp folder, move handlebars (hbs) files in views folder</li>
+                                <li>Move components / parts of website in partial folder which are frequently used.</li>
+                                <li>Modify paths of handlebar files and link css, js, images files with template engine.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Set Routes
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Go to routes folder, route files contains main routes of node app.</li>
+                                <li>You can create more routes according to need like contact us, login, register etc.</li>
+                                <li>In user panel route, give the name of user dashboard from template engine files. <span class="text-bold"> Note : Dashboard will open after successfull Authentication.</span> </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Manage API 
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Jump to API folder, user.js file contains all user actions like registeration, updation, deletion etc. </li>
+                                <li>Convert all res.json to res.render to render data in template engine pages.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Modify Schema
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>By default, there's user schema to valide data but you modify it and add more schemas for different collections.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="my-5">
+               <span class="display-6 text-center d-block">What next ?</span>
+                    <h5 class="p-4 text-center">
+                        Nodra is a complete backend solution for web developers but what about frontend ? Is there any way ?       
+                    </h5>
+                    <span class="p-1">
+                        Well, there are multiple ways to integrate node app with different frontends but currently main are two:
+                        <dd class="my-4">
+                            <dt>Using Template Engine</dt>
+                            <dd>
+                                Template Engine like hbs, ejs are easy to integrate with Node for sending and receiving data in both ways. No prior knowledge is required, fast development and easy to setup and efficient for small projects. I personally recommend hbs Template engine as it relaible.
+                            </dd>
+                            <dt>Using React JS</dt>
+                            <dd>
+                                React JS is one of the best frontend framework and part of MERN development. It provides you an awesome frontend using rich css libraries. Prior knowledge is required, a little bit difficult to setup, best for huge projects and it takes a lot of time. 
+                            </dd>
+                            <dd>
+
+                            </dd>
+                        </dd> 
+                    </span>
+            </div>
+            <div class="my-5">
+                <h3 class="text-center text-primary">Happy development &#128153;</h3>
+            </div>
+            
+        </div>
+
+        <nav class="navbar navbar-light bg-dark mt-5">
+            <span class="navbar-brand p-3 d-block m-auto text-white display-6 text-center">Powered by Nodra </span>
+        </nav>
+        
+</body>
+</html>
